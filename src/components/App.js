@@ -7,7 +7,7 @@ function App() {
 
   const[data,setData]=useState("")
   function fun(){
-    setData("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy")
+    setData("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy.")
   }
   return (
     <div id="main">

@@ -13,7 +13,7 @@ function App() {
     <div id="main">
       {/* // Do not alter the main  */}
       <p id="para">{data}</p>
-      <button onClick={()=>fun()}>Update</button>
+      <button id="click"onClick={()=>fun()}>Update</button>
     </div>
   );
 }

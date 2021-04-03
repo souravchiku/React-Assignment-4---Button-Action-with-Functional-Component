@@ -5,15 +5,15 @@ import "./../styles/App.css";
 
 function App() {
 
-  const[data,setData]=useState("")
+  const[data,setData]=useState(false)
   function fun(){
-    setData("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy.")
+    setData(true)
   }
   return (
     <div id="main">
       {/* // Do not alter the main  */}
-      <p id="para">{data}</p>
-      <button id="click"onClick={()=>fun()}>Update</button>
+      {data && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy.</p>}
+      <button id="click"onClick={fun}>Update</button>
     </div>
   );
 }
